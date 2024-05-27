@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Preview
 
-- Solution URL: [Click me](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W)
-- Live Site URL: [Click me](https://haquanq.github.io/frontendmentor-results-summary-component)
+- [Solution Link](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W)
+- [Live site Link](https://haquanq.github.io/frontendmentor-results-summary-component)
 
 ![](./design/desktop-preview.jpg)
 
