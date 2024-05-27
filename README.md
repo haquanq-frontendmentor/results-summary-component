@@ -10,10 +10,10 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Solution
+### Preview
 
 - Solution URL: [Click me](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W)
-- Live Site URL: [Click me](https://github.com/haquanq/frontendmentor-results-summary-component)
+- Live Site URL: [Click me](https://haquanq.github.io/frontendmentor-results-summary-component)
 
 ![](./design/desktop-preview.jpg)
 
