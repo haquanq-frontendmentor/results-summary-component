@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Solution
 
-- Solution URL: [Click me](https://your-solution-url.com)
-- Live Site URL: [Click me](https://your-live-site-url.com)
+- Solution URL: [Click me](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W)
+- Live Site URL: [Click me](https://github.com/haquanq/frontendmentor-results-summary-component)
 
 ![](./design/desktop-preview.jpg)
 
