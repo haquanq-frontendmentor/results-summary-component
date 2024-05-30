@@ -12,9 +12,9 @@ Users should be able to:
 
 ### Solution
 
-[`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W) [`Live site Link`](https://haquanq.github.io/frontendmentor-results-summary-component)
+- Built with: `HTML` `CSS`
 
-- Built with: HTML & CSS
+[`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W) [`Live site Link`](https://haquanq.github.io/frontendmentor-results-summary-component)
 
 ![](./.docs/design/desktop-design.jpg)
 
