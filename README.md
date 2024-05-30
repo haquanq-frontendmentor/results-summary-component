@@ -14,7 +14,7 @@ Users should be able to:
 
 - Built with: `HTML` `CSS`
 
-[`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W) [`Live site Link`](https://haquanq.github.io/frontendmentor-results-summary-component)
+[`Solution Link`](https://www.frontendmentor.io/solutions/only-html-and-css-IiqWkowz0W) [`Live site Link`](https://haquanq.github.io/fm-results-summary-component)
 
 ![](./.docs/design/desktop-design.jpg)
 
@@ -29,7 +29,7 @@ Users should be able to:
 Make sure you have Git installed in your system, open new terminal, run the following command:
 
 ```
-git clone https://github.com/clauderic/dnd-kit.git
+git clone https://github.com/haquanq/fm-results-summary-component.git
 ```
 
 Then, run `npm install` to install all dependencies.
