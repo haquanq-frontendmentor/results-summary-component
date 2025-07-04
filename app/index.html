@@ -4,75 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="stylesheet" type="text/css" href="./main.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <section class="result-card">
-      <section class="result-header">
-        <h2>Your result</h2>
-        <div class="circle">
-          <p>76 <span>of 100</span></p>
-        </div>
-        <article>
-          <h3>Great</h3>
-          <p>
+    <main>
+      <div class="result-card">
+        <section class="result-overview">
+          <h1 class="result-overview__title">Your Result</h1>
+          <p class="sr-only">Score: 76 out of 100</p>
+          <p class="result-overview__score" aria-hidden="true">
+            <span class="result-overview__score--at">76</span>
+            <span class="result-overview__score--max">of 100</span>
+          </p>
+          <p class="result-overview__compliment" aria-hidden="true">Great</p>
+          <p class="result-overview__description">
             You scored higher than 65% of the people who have taken these tests.
           </p>
-        </article>
-      </section>
-      <section class="result-summary">
-        <h3>Summary</h3>
-        <div class="summary-item-wrapper">
-          <div class="summary-item reaction">
-            <h4>
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt="icon-reaction"
-              />
-              Reaction
-            </h4>
-            <p class="score">80<span>&nbsp&nbsp/ 100</span></p>
-          </div>
-          <div class="summary-item memory">
-            <h4>
-              <img src="./assets/images/icon-memory.svg" alt="icon-memory" />
-              Memory
-            </h4>
-            <p class="score">92<span>&nbsp&nbsp/ 100</span></p>
-          </div>
-          <div class="summary-item verbal">
-            <h4>
-              <img src="./assets/images/icon-verbal.svg" alt="icon-verbal" />
-              Verbal
-            </h4>
-            <p class="score">61<span>&nbsp&nbsp/ 100</span></p>
-          </div>
-          <div class="summary-item visual">
-            <h4>
-              <img src="./assets/images/icon-visual.svg" alt="icon-visual" />
-              Visual
-            </h4>
-            <p class="score">72<span>&nbsp&nbsp/ 100</span></p>
-          </div>
-        </div>
-        <button class="btn-primary" type="button">
-          <span>Continue</span>
-          Continue
-        </button>
-      </section>
-    </section>
+        </section>
+        <section class="result-summary">
+          <h2 class="result-summary__title" id="result-summary-title">Summary</h2>
+          <ul class="result-summary__list" aria-describedby="result-summary-title">
+            <li class="result-summary__item result-summary__item--reaction">
+              <p class="result-summary__label">
+                <img
+                  class="result-summary__icon"
+                  src="./assets/images/icon-reaction.svg"
+                  alt="icon-reaction"
+                  aria-hidden="true"
+                />
+                Reaction <span class="sr-only">score: 80 out of 100</span>
+              </p>
+              <span class="result-summary__score" aria-hidden="true">
+                <span class="result-summary__score--at">80</span>
+                <span class="result-summary__score--max">&nbsp/ 100</span>
+              </span>
+            </li>
+            <li class="result-summary__item result-summary__item--memory">
+              <p class="result-summary__label">
+                <img
+                  class="result-summary__icon"
+                  src="./assets/images/icon-memory.svg"
+                  alt="icon-memory"
+                  aria-hidden="true"
+                />
+                Memory <span class="sr-only">score: 92 out of 100</span>
+              </p>
+              <span class="result-summary__score" aria-hidden="true">
+                <span class="result-summary__score--at">92</span>
+                <span class="result-summary__score--max">&nbsp/ 100</span>
+              </span>
+            </li>
+            <li class="result-summary__item result-summary__item--verbal">
+              <p class="result-summary__label">
+                <img
+                  class="result-summary__icon"
+                  src="./assets/images/icon-verbal.svg"
+                  alt="icon-verbal"
+                  aria-hidden="true"
+                />
+                Verbal <span class="sr-only">score: 61 out of 100</span>
+              </p>
+              <span class="result-summary__score" aria-hidden="true">
+                <span class="result-summary--score--at">61</span>
+                <span class="result-summary__score--max">&nbsp/ 100</span>
+              </span>
+            </li>
+            <li class="result-summary__item result-summary__item--visual">
+              <p class="result-summary__label">
+                <img
+                  class="result-summary__icon"
+                  src="./assets/images/icon-visual.svg"
+                  alt="icon-visual"
+                  aria-hidden="true"
+                />
+                Visual <span class="sr-only">score: 72 out of 100</span>
+              </p>
+              <span class="result-summary__score">
+                <span class="result-summary__score--at">72</span>
+                <span class="result-summary__score--max">&nbsp/ 100</span>
+              </span>
+            </li>
+          </ul>
+          <a class="result-summary__continue-btn" href="">Continue</a>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
