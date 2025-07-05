@@ -12,16 +12,19 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ## :rocket: Project overview
 
-### Challenge requirements
+### Challenge equirements
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Implemented features
 
-- Added focus effect on interactive elements
+- [x] Accessibility
+  - [x] Responsive accross different devices
+  - [x] Interactive elements have clear indicator when focused
+  - [x] Statistic contents are easily announced by screen readers
 
-### Screenshots
+### Preview
 
 ![](./.docs/design/desktop-design.jpg)
 
@@ -29,7 +32,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Approach
 
-Developed with mobile-first workflow.
+Developed with mobile-first workflow, followed with [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
 
 ### Built with
 
@@ -39,7 +42,7 @@ Developed with mobile-first workflow.
 | `CSS`         | Vanilla CSS                        |
 | `BrowserSync` | Development server, live reloading |
 
-## :astronaut: Working in `fm-results-summary-component` repository
+## :astronaut: Working in this repository
 
 ### Presequisites
 
