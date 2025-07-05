@@ -121,6 +121,7 @@ main {
     font-weight: var(--font-meidum);
     font-size: var(--text-base);
     background-color: var(--color-pale-blue);
+    display: flex;
 }
 .result-card {
     width: min(100vw, 46rem);
@@ -288,9 +289,9 @@ main {
     }
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 46rem) {
     main {
-        padding: clamp(1rem, 40vw - 16em, 17.75rem) 0;
+        align-items: center;
     }
     .result-card {
         display: flex;
