@@ -23,25 +23,24 @@
         url("./assets/fonts/hanken-grotesk-v11-latin-800.ttf") format("truetype");
 }
 :root {
-    --clr-light-red: hsl(0, 100%, 67%);
-    --bg-light-red: hsla(0, 100%, 67%, 0.05);
-    --clr-orangey-yellow: hsl(39, 100%, 56%);
-    --bg-orangey-yellow: hsla(39, 100%, 56%, 0.05);
-    --clr-green-teal: hsl(166, 100%, 37%);
-    --bg-green-teal: hsla(166, 100%, 37%, 0.05);
-    --clr-cobalt-blue: hsl(234, 85%, 45%);
-    --bg-cobalt-blue: hsla(234, 85%, 45%, 0.05);
+    --color-light-red: hsl(0, 100%, 67%);
+    --color-orangey-yellow: hsl(39, 100%, 56%);
+    --color-green-teal: hsl(166, 100%, 37%);
+    --color-cobalt-blue: hsl(234, 85%, 45%);
 
+    --bg-light-red: hsla(0, 100%, 67%, 0.05);
+    --bg-orangey-yellow: hsla(39, 100%, 56%, 0.05);
+    --bg-green-teal: hsla(166, 100%, 37%, 0.05);
+    --bg-cobalt-blue: hsla(234, 85%, 45%, 0.05);
     --bg-light-slate-blue: hsl(252, 100%, 67%);
     --bg-light-royal-blue: hsl(241, 81%, 54%);
-
     --bg-violet-blue: hsla(256, 72%, 46%, 1);
     --bg-persian-blue: hsla(241, 72%, 46%, 0);
 
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-pale-blue: hsl(221, 100%, 96%);
-    --clr-light-lavender: hsl(241, 100%, 89%);
-    --clr-dark-gray-blue: hsl(224, 30%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-pale-blue: hsl(221, 100%, 96%);
+    --color-light-lavender: hsl(241, 100%, 89%);
+    --color-dark-gray-blue: hsl(224, 30%, 27%);
 
     --font-main: "Hanken Grotesk", sans-serif;
     --font-meidum: 500;
@@ -107,10 +106,10 @@ h6 {
 }
 .sr-only {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0.125rem;
+    height: 0.125rem;
     padding: 0;
-    margin: -1px;
+    margin: -0.125rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -121,13 +120,13 @@ main {
     font-family: var(--font-main);
     font-weight: var(--font-meidum);
     font-size: var(--text-base);
-    background-color: var(--clr-pale-blue);
+    background-color: var(--color-pale-blue);
 }
 .result-card {
     width: min(100vw, 46rem);
     margin: 0 auto;
     height: 100%;
-    background-color: var(--clr-white);
+    background-color: var(--color-white);
     box-shadow: 2.25rem 0.75rem 3.125rem 0rem hsla(234, 85%, 45%, 8%);
 }
 .result-overview {
@@ -138,7 +137,7 @@ main {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(#6541fd, #332de9);
-    color: var(--clr-white);
+    color: var(--color-white);
 }
 .result-overview__title {
     font-size: var(--text-base);
@@ -162,18 +161,18 @@ main {
 .result-overview__score--at {
     font-size: var(--text-3xl);
     font-weight: var(--font-extra-bold);
-    color: var(--clr-white);
+    color: var(--color-white);
     margin-bottom: 0.625rem;
 }
 .result-overview__score--max {
     font-size: var(--text-sm);
-    color: var(--clr-light-lavender);
+    color: var(--color-light-lavender);
     line-height: 1.3125rem;
 }
 .result-overview__compliment {
     font-weight: var(--font-bold);
     font-size: var(--text-lg);
-    color: var(--clr-white);
+    color: var(--color-white);
     text-align: center;
     line-height: calc(1em + 0.4375rem);
     margin-bottom: calc(1em - 1rem);
@@ -184,7 +183,7 @@ main {
     text-align: center;
     max-width: 32ch;
     letter-spacing: -0.01em;
-    color: var(--clr-light-lavender);
+    color: var(--color-light-lavender);
     line-height: calc(1em + 0.3125rem);
 }
 .result-summary {
@@ -192,7 +191,7 @@ main {
 }
 .result-summary__title {
     font-size: var(--text-base);
-    color: var(--clr-dark-gray-blue);
+    color: var(--color-dark-gray-blue);
     line-height: calc(1em + 0.3125rem);
     margin-bottom: 1.5rem;
 }
@@ -212,6 +211,20 @@ main {
     height: 3.5rem;
     border-radius: var(--rounded-sm);
 }
+.result-summary__label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: var(--font-bold);
+    letter-spacing: -0.01em;
+}
+.result-summary__score {
+    font-weight: var(--font-bold);
+    color: var(--color-dark-gray-blue);
+}
+.result-summary__score--max {
+    opacity: 0.65;
+}
 .result-summary__item--reaction {
     background-color: var(--bg-light-red);
 }
@@ -225,36 +238,22 @@ main {
     background-color: var(--bg-cobalt-blue);
 }
 .result-summary__item--reaction .result-summary__label {
-    color: var(--clr-light-red);
+    color: var(--color-light-red);
 }
 .result-summary__item--memory .result-summary__label {
-    color: var(--clr-orangey-yellow);
+    color: var(--color-orangey-yellow);
 }
 .result-summary__item--verbal .result-summary__label {
-    color: var(--clr-green-teal);
+    color: var(--color-green-teal);
 }
 .result-summary__item--visual .result-summary__label {
-    color: var(--clr-cobalt-blue);
-}
-.result-summary__label {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-weight: var(--font-bold);
-    letter-spacing: -0.01em;
-}
-.result-summary__score {
-    font-weight: var(--font-bold);
-    color: var(--clr-dark-gray-blue);
-}
-.result-summary__score--max {
-    opacity: 0.65;
+    color: var(--color-cobalt-blue);
 }
 .result-summary__continue-btn {
-    background-color: var(--clr-dark-gray-blue);
+    background-color: var(--color-dark-gray-blue);
     border-radius: var(--rounded-xl);
     font-weight: var(--font-bold);
-    color: var(--clr-pale-blue);
+    color: var(--color-pale-blue);
     display: block;
     text-align: center;
     text-decoration: none;
@@ -273,6 +272,11 @@ main {
     padding: inherit;
     background: linear-gradient(#4e25cc, #2920f1);
     transition: opacity 200ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+    .result-summary__continue-btn::before {
+        transition: all 0ms;
+    }
 }
 @media (hover: hover) {
     .result-summary__continue-btn:hover::before {
@@ -325,7 +329,7 @@ main {
     }
     .result-summary__title {
         font-size: var(--text-lg);
-        color: var(--clr-dark-gray-blue);
+        color: var(--color-dark-gray-blue);
         margin-bottom: 1.8125rem;
     }
     .result-summary__list {
