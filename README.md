@@ -19,10 +19,11 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Implemented features
 
-- [x] Accessibility
-  - [x] Responsive accross different devices
-  - [x] Interactive elements have clear indicator when focused
-  - [x] Statistic contents are easily announced by screen readers
+Accessibility
+
+- [x] Responsive accross different devices
+- [x] Interactive elements have clear indicator when focused
+- [x] Statistic contents are easily announced by screen readers
 
 ### Preview
 
