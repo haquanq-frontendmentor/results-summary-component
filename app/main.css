@@ -280,7 +280,7 @@ main {
 }
 @media (prefers-reduced-motion: reduce) {
     .result-summary__continue-btn::before {
-        transition: all 0ms;
+        transition: none;
     }
 }
 @media (hover: hover) {
